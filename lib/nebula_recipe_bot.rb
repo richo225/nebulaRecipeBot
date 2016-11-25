@@ -25,6 +25,7 @@ def get_ingredients
   @label['hits'].each_with_index do |title, index|
     @labels << "#{index+1}. #{title['recipe']['label']}"
     @photos << "#{title['recipe']['image']}"
+    @recipe << "#{title['recipe']['ingredientLines']}"
   end
 end
 
@@ -53,5 +54,8 @@ Telegram::Bot::Client.run(token) do |bot|
     when '2 image'
       bot.api.send_photo(chat_id: message.chat.id, photo: "#{@photos[1]}")
     end
+  when '2 image'
+    bot.api.send_photo(chat_id: message.chat.id, photo: "#{@photos[1]}")
+  end
   end
 end
