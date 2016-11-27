@@ -1,7 +1,7 @@
 Nebula Recipe Bot
 =================
 
-A telegram chatbot built with ruby using the [telegram-bot-ruby](https://github.com/atipugin/telegram-bot-ruby) gem. Users can type in an ingredient and the bot will return a list of recipes that include the ingredient. From there they can select a recipe and via different commands see a list of its ingredients, cooking instructions, images and website urls.
+A telegram chatbot built with ruby using the [telegram-bot-ruby](https://github.com/atipugin/telegram-bot-ruby) gem and [Big Oven](http://www.bigoven.com) API. Users can type in an ingredient and the bot will return a list of recipes that include the ingredient. From there they can select a recipe and via different commands see a list of its ingredients, cooking instructions, images and website urls.
 
 Installation
 ------------
